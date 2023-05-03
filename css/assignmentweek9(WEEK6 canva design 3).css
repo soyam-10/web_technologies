@@ -17,22 +17,16 @@
 }
 .parent .images{
     padding-top: 40px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
 }
 h3{
     padding-top: 15px;
     font-size: 20px;
 }
-.parent .left{
-    width: 33.33%;
-}
-.parent .mid{
-    width: 33.33%;
-}
-.parent .right{
-    width: 33.33%;
-}
+
 .parent .left,.right,.mid{
-    float: right;
     text-align: center;
     font-size: 11px;
 }
