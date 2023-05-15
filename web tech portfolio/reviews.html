@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Movie Reviews</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <script src="script.js"></script>
+</head>
+<body>
+  <header>
+    <h1>Movie Review Website</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="reviews.html">Movie Reviews</a></li>
+        <li><a href="about.html">About Me</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section>
+    <h2>Movie Reviews</h2>
+    <!-- Add movie reviews here -->
+    <div id="movieReviews"></div>
+  </section>
+
+  <footer>
+    <p>&copy; 2023 Your Name</p>
+  </footer>
+
+  <script>
+    // Example JavaScript code to fetch and display movie reviews
+    const movieReviews = [
+      { title: "Movie 1", rating: 4, review: "Lorem ipsum dolor sit amet, consectetur adipiscing elit." },
+      { title: "Movie 2", rating: 5, review: "Pellentesque et fermentum lacus, sed pulvinar felis." },
+      { title: "Movie 3", rating: 3, review: "Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae." }
+    ];
+
+    const movieReviewsContainer = document.getElementById("movieReviews");
+
+    movieReviews.forEach(review => {
+      const reviewElement = document.createElement("div");
+      reviewElement.innerHTML = `
+        <h3>${review.title}</h3>
+        <p>Rating: ${review.rating}</p>
+        <p>${review.review}</p>
+      `;
+      movieReviewsContainer.appendChild(reviewElement);
+    });
+  </script>
+</body>
+</html>

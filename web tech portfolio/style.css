@@ -1,0 +1,111 @@
+/* CSS styles for the movie review website */
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 10px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+section {
+  padding: 20px;
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+}
+
+/* Styles specific to index.html */
+#index .featured-movies {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+#index .featured-movie {
+  width: 300px;
+  margin: 20px;
+}
+
+/* Styles specific to reviews.html */
+#reviews .movie-review {
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+#reviews .movie-review h3 {
+  margin-top: 0;
+}
+
+#reviews .movie-review .poster {
+  max-width: 200px;
+  height: auto;
+  margin-right: 10px;
+}
+
+/* Styles specific to about.html */
+#about .about-me {
+  text-align: center;
+}
+
+#about .about-me img {
+  max-width: 300px;
+  height: auto;
+  border-radius: 50%;
+  margin-bottom: 20px;
+}
+
+/* Styles specific to contact.html */
+#contact form {
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+#contact form div {
+  margin-bottom: 10px;
+}
+
+#contact form label {
+  display: block;
+  font-weight: bold;
+}
+
+#contact form input,
+#contact form textarea {
+  width: 100%;
+  padding: 5px;
+}
+
+#contact form button {
+  padding: 10px 20px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
